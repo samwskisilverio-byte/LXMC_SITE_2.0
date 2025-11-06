@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dúvidas Frequentes - LXMC</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --accent: #14532d;
+  --muted: #555;
+  --radius: 14px;
+  --fw-sans: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--fw-sans);
+  background-color: #ffffff;
+  color: #111827;
+  text-align: center;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  position: relative;
+}
+
+header img {
+  width: 140px;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-top: 10px;
+}
+
+.back-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #166534;
+}
+
+.faq-container {
+  max-width: 700px;
+  margin: 50px auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: #f9f9f9;
+  border-radius: var(--radius);
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: var(--accent);
+  color: white;
+  padding: 16px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #166534;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  font-size: 0.95rem;
+  color: #333;
+  background: #fff;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px; /* altura máxima para abrir suavemente */
+  padding: 16px;
+}
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="5f97de76-7bf7-4ad9-b31e-5632942d2f58.png.jpg" alt="Brasão LXMC">
+  <h1>Dúvidas Frequentes</h1>
+  <button class="back-btn" onclick="window.location.href='Diretoria.html'">Voltar</button>
+</header>
+
+<main class="faq-container">
+  <div class="faq-item">
+    <button class="faq-question">A LXMC é ligada à maçonaria?</button>
+    <div class="faq-answer">De maneira nenhuma. Ainda que tenha conceitos de fraternidade bem explícitos em seu cerne, a LXMC não possui e nunca possuirá ligações com a maçonaria. Somos da verdade, não precisamos esconder nada.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">A LXMC é um órgão da I.P.B?</button>
+    <div class="faq-answer">Não. A LXMC tem esse nome porque os fundadores são presbiterianos da Igreja Presbiteriana Central de Guarapuava, ainda que não tenha influência sobre o conselho e a instituição da I.P.B.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">A LXMC aceita católicos?</button>
+    <div class="faq-answer">Sim. Esses irmãos são bem-vindos.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Como posso entrar na LXMC?</button>
+    <div class="faq-answer">Basta apertar "Quero recrutar-me" no menu principal ou conversar conosco. Te queremos no time!</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Para que serve a LXMC?</button>
+    <div class="faq-answer">A LXMC nasceu como grupo para o crescimento intelectual, espiritual e social de seus membros, centrados em Cristo Jesus.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">A LXMC foca somente em lógica e matemática?</button>
+    <div class="faq-answer">Nossa ênfase é lógica e matemática, muito bem representadas pelo xadrez, mas, sim, nossos membros se interessam por outras áreas, visto que com certa frequência estas viram pautas.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">A LXMC é uma empresa?</button>
+    <div class="faq-answer">Não. A LXMC (Liga de Xadrez e Matemática Central) não é uma empresa. Somos uma organização sem fins lucrativos.</div>
+  </div>
+
+   <div class="faq-item">
+    <button class="faq-question">O que significa o brasão?</button>
+    <div class="faq-answer">O brasão é composto por uma coroa, que lembra um rei de xadrez, um livro e uma árvore pitagórica em chamas. O rei faz alusão ao poder de Cristo e também ao xadrez. O livro representa a Bíblia, a palavra, mas também nosso desejo da busca pelo conhecimento. A árvore pitagórica representa matemática, mas também representa o presbiterianismo, já que o símbolo de nossa igreja é uma sarça ardente. O fogo que queima a árvore representa Deus de maneira geral, mas também representa a Terceira Pessoa da Trindada, o Consolador.</div>
+  </div>
+</main>
+
+<footer>
+  © 2025 LXMC - Liga de Xadrez e Matemática I.P.B. Central
+</footer>
+
+<script>
+const questions = document.querySelectorAll('.faq-question');
+questions.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isActive = item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    if (!isActive) item.classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>

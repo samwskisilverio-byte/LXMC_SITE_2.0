@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fale Conosco - LXMC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #166534; /* verde escuro padrão LXMC */
+      --muted: #555;
+      --radius: 14px;
+      --fw-sans: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto;
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: var(--fw-sans);
+      background: #fff;
+      color: #111827;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 0;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      width: 140px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-top: 20px;
+      color: #111827;
+    }
+
+    .contact-info {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .contact-info p {
+      margin: 0;
+    }
+
+    .btn-back {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--accent);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: var(--radius);
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+    }
+
+    .btn-back:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      margin-top: 100px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="5f97de76-7bf7-4ad9-b31e-5632942d2f58.png.jpg" alt="Brasão LXMC">
+    <h1>Fale Conosco!</h1>
+  </header>
+
+  <button class="btn-back" onclick="window.location.href='Diretoria.html'">Voltar</button>
+
+  <main>
+    <div class="contact-info">
+      <p><strong>Presidente:</strong> Samuel Pakuschewski Silvério<br>📞 +55 42 8870-9596</p>
+      <p><strong>Secretário:</strong> Edson Quintiliano<br>📞 +55 42 9127-4469</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 LXMC - Liga de Xadrez e Matemática I.P.B. Central
+  </footer>
+</body>
+</html>
